@@ -1,3 +1,4 @@
+id
 newgrp docker
 docker build -t ndb-ubuntu .
 chmod +x ./docker_run_cmd
