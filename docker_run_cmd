@@ -1,3 +1,4 @@
+newgrp docker
 docker build -t ndb-ubuntu .
 chmod +x ./docker_run_cmd
 docker run -p 8095:8095 --rm ndb-ubuntu bash -c "cd ndb-maven-test; mvn jetty:run"
