@@ -10,4 +10,7 @@ RUN git clone https://github.com/blissnd/spring3-mvc-maven-xml-hello-world ./ndb
 
 COPY . /ndb-maven-test
 
-CMD mvn jetty:run
+WORKDIR /ndb-maven-test/
+
+ENTRYPOINT ["mvn"]
+CMD ["jetty:run"]
