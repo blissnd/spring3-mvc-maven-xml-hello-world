@@ -1,6 +1,7 @@
 #!/bin/bash
 
-id
 newgrp docker
+docker ps
+
 docker build -t ndb-ubuntu .
 docker run -p 8095:8095 --rm ndb-ubuntu bash -c "cd ndb-maven-test; mvn jetty:run"
